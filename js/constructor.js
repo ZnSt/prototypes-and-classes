@@ -74,33 +74,33 @@
 // 8. В свойство this.__proto__ записывается ссылка на объект Функция.prototype;
 // 9. Ссылка на объект возвращается в место вызова new Функция();
 
-const User = function ({ name, heigth, colorEyes } = {}) {
-  (this.name = name), (this.heigth = heigth), (this.colorEyes = colorEyes);
-};
+// const User = function ({ name, heigth, colorEyes } = {}) {
+//   (this.name = name), (this.heigth = heigth), (this.colorEyes = colorEyes);
+// };
 
-User.prototype.changeColorEyes = function (changeColor) {
-  this.colorEyes = changeColor;
-};
+// User.prototype.changeColorEyes = function (changeColor) {
+//   this.colorEyes = changeColor;
+// };
 
-const paramUser1 = new User({
-  name: "Steve",
-  heigth: 1.8,
-  colorEyes: "blue",
-});
-console.log("🚀: paramUser1", paramUser1);
+// const paramUser1 = new User({
+//   name: "Steve",
+//   heigth: 1.8,
+//   colorEyes: "blue",
+// });
+// console.log("🚀: paramUser1", paramUser1);
 
-paramUser1.changeColorEyes("black");
+// paramUser1.changeColorEyes("black");
 
-User.getInfo = function (obj) {
-  console.log(obj);
-};
-User.getInfo(paramUser1);
+// User.getInfo = function (obj) {
+//   console.log(obj);
+// };
+// User.getInfo(paramUser1);
 
-const paramUser2 = new User({
-  name: "Josh",
-  heigth: 1.75,
-  colorEyes: "green",
-});
-console.log("🚀: paramUser2", paramUser2);
+// const paramUser2 = new User({
+//   name: "Josh",
+//   heigth: 1.75,
+//   colorEyes: "green",
+// });
+// console.log("🚀: paramUser2", paramUser2);
 
-paramUser2.changeColorEyes("red");
+// paramUser2.changeColorEyes("red");
